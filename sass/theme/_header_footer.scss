@@ -68,6 +68,43 @@
 .site-footer{
     padding: 3rem 0;
 }
+.bottom-footer{
+    background-color: #0c344c;
+    color: #fff;
+    font-size: 12px;
+    padding: rem(30px 0);
+    .row{
+	justify-content: space-between;
+    }
+    a{
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 11px;
+	&:hover{
+	    color: $primary;
+	}
+    }
+    .nav{
+	li{
+	    position: relative;
+	}
+	li+li{
+	    padding-left: 17px;
+	    margin-left: 16px;
+	    &:before{
+		content: '';
+		display: block;
+		position: absolute;
+		background-color: $primary;
+		left: 0;
+		width: 1px;
+		height: 11px;
+		top: 50%;
+		transform: translateY(-50%);
+	    }
+	}
+    }
+}
 #toTop{
     position: fixed;
     z-index: 200;
