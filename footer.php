@@ -24,8 +24,7 @@ defined('ABSPATH') || exit;
 <footer class="bottom-footer">
     <div class="container">
 	<div class="row">
-	    <div class="col-auto">Copyright © <?php echo date('Y') ?> Cambridge Sleep Sciences. All rights reserved.</div>
-	    <div class="col-auto">
+	    <div class="col-12 col-md-auto">
 		<?php
 		wp_nav_menu(
 			array(
@@ -38,6 +37,7 @@ defined('ABSPATH') || exit;
 		);
 		?>
 	    </div>
+	    <div class="col-12 col-md-auto">Copyright © <?php echo date('Y') ?> Cambridge Sleep Sciences. All rights reserved.</div>
 	</div>
     </div>
 </footer>
