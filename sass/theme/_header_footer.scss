@@ -67,6 +67,12 @@
 }
 .site-footer{
     padding: 3rem 0;
+    background-color: #0c4053;
+    color: #fff;
+    .logo-link{
+	display: inline-block;
+	max-width: 184px;
+    }
 }
 .bottom-footer{
     background-color: #0c344c;
@@ -135,6 +141,13 @@
 	.row{
 	    flex-direction: row-reverse;
 	    justify-content: space-between;
+	}
+    }
+}
+@include media-breakpoint-down(md) {
+    .bottom-footer{
+	.nav {
+	    margin-bottom: .5rem;
 	}
     }
 }
