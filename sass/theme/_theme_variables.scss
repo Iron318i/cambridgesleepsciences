@@ -1,0 +1,195 @@
+
+// Color system
+$white:    #fff;
+//$gray-100: #f6f6f6;
+//$gray-200: #e8e8e8 !default;
+//$gray-300: #dee2e6 !default;
+$gray-400: #cdc5c0;
+$gray-500: #9a9a9a;
+//$gray-600: #7b7b7b;
+//$gray-700: #666666;
+$gray-800: #333333;
+//$gray-900: #212529 !default;
+$black:    #000;
+
+
+$blue:    #005479;
+//$indigo:  #6610f2 !default;
+//$purple:  #6f42c1 !default;
+//$pink:    #ef94d9;
+$red:     #ee1b24;
+//$orange:  #ff9a00;
+//$yellow:  #ffb401;
+//$green:   #00aa00;
+//$teal:    #20c997 !default;
+//$cyan:    #34c7d6;
+
+$primary: $blue;
+
+$yiq-text-dark: #fff;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-radius: 0;
+$border-radius-lg: 0;
+$border-radius-sm:  0;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+
+$enable-caret: false;
+
+// Spacing
+//
+
+$spacer: 2rem;
+$spacers: ();
+$spacers: map-merge(
+(
+0: 0,
+1: ($spacer * .5),
+2: ($spacer),
+3: ($spacer * 1.5),
+4: ($spacer * 2),
+5: ($spacer * 2.5)
+),
+$spacers
+);
+
+// Body
+//
+$body-color: $black;
+$line-height-base: 1.5;
+$font-weight-base: 400;
+//$body-bg: $gray-100;
+
+// Links
+//
+// Style anchor elements.
+$link-color: $blue;
+$link-hover-decoration: none;
+$enable-responsive-font-sizes: true;
+$rfs-rem-value: 20;
+
+// Grid breakpoints
+//
+
+$grid-breakpoints: (
+xs: 0,
+sm: 576px,
+md: 768px,
+lg: 992px,
+xl: 1280px,
+xxl: 1400px
+);
+
+// Grid containers
+//
+
+$container-max-widths: (
+sm: 540px,
+md: 720px,
+lg: 960px,
+xl: 1200px,
+xxl: 1390px
+);
+
+// Typography
+//
+$font-family-sans-serif: 'Raleway', sans-serif;
+$headings-font-family: 'Cinzel', serif;
+
+$font-weight-bolder: 700;
+
+$h1-font-size: rem(48px);
+$h2-font-size: rem(46px);
+$h3-font-size: rem(39px);
+$h4-font-size: rem(33px);
+$h5-font-size: rem(24px);
+$h6-font-size: rem(20px);
+
+$headings-line-height: 1.2;
+$headings-font-weight: 400;
+$headings-color: #144d6e;
+
+// Navbar
+$navbar-padding-x: 15px;
+$navbar-padding-y: rem(15px);
+
+$nav-link-padding-y: rem(4px);
+
+$navbar-light-color: #154f70;
+$navbar-light-hover-color:  $navbar-light-color;
+$navbar-light-active-color: $navbar-light-color;
+
+$navbar-dark-color: $white;
+$navbar-nav-link-padding-x: rem(17px);
+
+
+$dropdown-link-color: $navbar-light-color;
+$dropdown-item-padding-x: .5rem;
+// Forms
+$form-grid-gutter-width: 6px;
+
+$form-group-margin-bottom: rem(30px);
+$input-padding-x: rem(20px);
+$input-padding-y: rem(9px);
+
+$input-border-color: $white;
+$input-box-shadow: 0 none;
+$input-placeholder-color: $gray-500;
+
+
+$input-font-size: rem(18px);
+
+$custom-control-indicator-size: rem(19px);
+$custom-control-label-color: $white;
+$custom-control-indicator-border-color: $white;
+
+$custom-control-indicator-checked-color: $black;
+$custom-control-indicator-checked-bg: $white;
+$custom-control-indicator-bg-size: 75% 75%;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-font-family:$headings-font-family;
+$btn-font-size: rem(16px);
+$btn-font-weight: 400;
+$btn-padding-y: rem(13.5px);
+$btn-padding-x: rem(35px);
+
+$btn-font-size-lg: rem(22px);
+$btn-padding-y-lg: rem(10px);
+$btn-padding-x-lg: rem(50px);
+
+/*Card*/
+$card-cap-bg: #0baeff;
+$card-cap-color: #fff;
+$card-bg: $blue;
+$card-border-width: 0px;
+$card-border-radius: 0;
+$card-spacer-x: rem(10px 15px);
+$card-color: #fff;
+
+/*Owl*/
+$nav-background-hover: transparent;
+//$nav-color-hover: $gray-500;
+$nav-background: transparent;
+
+$dot-width: 14px;
+$dot-height: 14px;
+$dot-background: #fff;
+$dot-background-active: $primary;
+
+// Image thumbnails
+
+$thumbnail-padding:  rem(6px);
+$thumbnail-box-shadow: 0 1px 2px rgba($black, .075);
+
+/*Modal*/
+$modal-lg: 744px;
