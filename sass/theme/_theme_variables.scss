@@ -14,6 +14,7 @@ $black:    #000;
 
 
 $blue:    #23a5d5;
+$blue-dark:    #0c4053;
 //$indigo:  #6610f2 !default;
 //$purple:  #6f42c1 !default;
 //$pink:    #ef94d9;
@@ -61,8 +62,8 @@ $spacers
 
 // Body
 //
-$body-color: $black;
-$line-height-base: 1.5;
+$body-color: $blue-dark;
+$line-height-base: 1.57;
 $font-weight-base: 400;
 //$body-bg: $gray-100;
 
@@ -99,13 +100,12 @@ xxl: 1390px
 
 // Typography
 //
-$font-family-sans-serif: 'Raleway', sans-serif;
-$headings-font-family: 'Cinzel', serif;
+$font-family-sans-serif: 'Lato', sans-serif;
 
 $font-weight-bolder: 700;
 
-$h1-font-size: rem(48px);
-$h2-font-size: rem(46px);
+$h1-font-size: rem(50px);
+$h2-font-size: rem(22px);
 $h3-font-size: rem(39px);
 $h4-font-size: rem(33px);
 $h5-font-size: rem(24px);
@@ -157,7 +157,6 @@ $custom-control-indicator-bg-size: 75% 75%;
 //
 // For each of Bootstrap's buttons, define text, background, and border color.
 
-$btn-font-family:$headings-font-family;
 $btn-font-size: rem(16px);
 $btn-font-weight: 400;
 $btn-padding-y: rem(13.5px);

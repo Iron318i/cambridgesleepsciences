@@ -126,5 +126,5 @@ if (!function_exists('cambridgesleepsciences_all_excerpts_get_more_link')) {
 
 }
 
-add_image_size('page-header-large', 1920, 500, array('center', 'center'));
-add_image_size('page-header-md', 768, 400, array('center', 'center'));
+add_image_size('page-header-large', 1920, 375, array('center', 'center'));
+add_image_size('page-header-md', 768, 375, array('center', 'center'));

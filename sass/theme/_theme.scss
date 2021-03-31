@@ -75,16 +75,8 @@ select.form-control{
 }
 .page-header{
     position: relative;
-    &:before{
-	content: '';
-	position: absolute;
-	z-index: 1;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background-color: rgba(#000, .63);
-    }
+    background-color: $blue-dark;
+    min-height: 19vw;
     .container{
 	position: absolute;
 	top: 50%;
@@ -97,26 +89,12 @@ select.form-control{
 	width: 100%;
     }
     .h1{
+	text-align: center;
 	margin-bottom: 0;
 	color: #fff;
 	text-transform: uppercase;
 	line-height: 1;
-	padding-left: rem(32px);
 	position: relative;
-	&:before{
-	    content: '';
-	    display: inline-block;
-	    position: absolute;
-	    width: rem(6px);
-	    top: 3%;
-	    left: 0;
-	    bottom: 9%;
-	    background-color: $red;
-	}
-	small{
-	    font-weight: 500;
-	    font-size: 75%;
-	}
     }
     .sub-heading{
 	color: #cdcdcd;

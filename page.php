@@ -24,7 +24,7 @@ if (fw_get_db_post_option($post->ID, 'banner_heading') != '') {
 if (has_post_thumbnail()):
     $img_id = $post->ID;
 else:
-    $img_id = 9;
+    $img_id = 19;
 endif;
 ?>
 <?php if ($banner_enable): ?>
