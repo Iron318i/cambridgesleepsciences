@@ -264,7 +264,6 @@ function svg_icon_shortcode($atts) {
 	'class' => '',
 		    ), $atts)
     );
-    $uri = get_template_directory_uri();
     $html = '<span class="icon ' . $id . '"><svg><use xlink:href="#' . $id . '"></use></svg></span>';
 
     return $html;
@@ -273,14 +272,12 @@ function svg_icon_shortcode($atts) {
 add_shortcode('svg', 'svg_icon_shortcode');
 
 function the_svg($id) {
-    $uri = get_template_directory_uri();
     $html = '<span class="icon ' . $id . '"><svg><use xlink:href="#' . $id . '"></use></svg></span>';
 
     echo $html;
 }
 
 function get_the_svg($id) {
-    $uri = get_template_directory_uri();
     $html = '<span class="icon ' . $id . '"><svg><use xlink:href="#' . $id . '"></use></svg></span>';
 
     return $html;

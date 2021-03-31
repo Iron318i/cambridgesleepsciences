@@ -44,6 +44,7 @@ if (!function_exists('cambridgesleepsciences_setup')) {
 		array(
 		    'primary' => __('Primary Menu', 'cambridgesleepsciences'),
 		    'footer' => __('Footer Menu', 'cambridgesleepsciences'),
+		    'copyright' => __('Copyright Menu', 'cambridgesleepsciences'),
 		)
 	);
 

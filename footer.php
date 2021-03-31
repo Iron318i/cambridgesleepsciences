@@ -29,10 +29,11 @@ defined('ABSPATH') || exit;
 		<?php
 		wp_nav_menu(
 			array(
-			    'theme_location' => 'footer',
+			    'theme_location' => 'copyright',
 			    'container' => false,
 			    'container_class' => false,
-			    'menu_id' => 'footer-menu',
+			    'menu_id' => 'copyright-menu',
+			    'menu_class' => 'nav',
 			)
 		);
 		?>
@@ -40,7 +41,7 @@ defined('ABSPATH') || exit;
 	</div>
     </div>
 </footer>
-<?php get_template_part('inc/svg-sprite') ?>
+<?php get_template_part('template-parts/svg-sprite') ?>
 <?php wp_footer(); ?>
 </body>
 </html>

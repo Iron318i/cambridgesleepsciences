@@ -17,7 +17,7 @@ $theme-colors: map-remove($theme-colors, "secondary", "success", "info","warning
 @import "../../src/sass/bootstrap4/images";
 //@import "../../src/sass/bootstrap4/code";
 @import "../../src/sass/bootstrap4/grid";
-//@import "../../src/sass/bootstrap4/tables";
+@import "../../src/sass/bootstrap4/tables";
 @import "../../src/sass/bootstrap4/forms";
 @import "../../src/sass/bootstrap4/buttons";
 @import "../../src/sass/bootstrap4/transitions";
