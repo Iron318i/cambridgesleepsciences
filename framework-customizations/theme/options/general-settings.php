@@ -13,40 +13,25 @@ $options = array(
 		'title' => __('Contacts', 'cambridgesleepsciences'),
 		'type' => 'box',
 		'options' => array(
-		    'phone' => array(
-			'label' => __('Phone', 'cambridgesleepsciences'),
-			'type' => 'text',
-			'value' => '+1 (869) 469-8889'
-		    ),
-		    'fb' => array(
-			'label' => __('Facebook link', 'aesthetix'),
+		    'css_yt' => array(
+			'label' => __('CSS YouTube', 'aesthetix'),
 			'type' => 'text',
 			'value' => '#'
 		    ),
-		    'tw' => array(
-			'label' => __('Twitter link', 'aesthetix'),
+		    'css_in' => array(
+			'label' => __('CSS LinkidIn', 'aesthetix'),
 			'type' => 'text',
 			'value' => '#'
 		    ),
-		    'pint' => array(
-			'label' => __('Pinterest link', 'aesthetix'),
+		    'sh_yt' => array(
+			'label' => __('SleepHub YouTube', 'aesthetix'),
 			'type' => 'text',
 			'value' => '#'
 		    ),
-		    'in' => array(
-			'label' => __('LinkedIn link', 'aesthetix'),
+		    'sh_in' => array(
+			'label' => __('SleepHub LinkidIn', 'aesthetix'),
 			'type' => 'text',
 			'value' => '#'
-		    ),
-		    'gplus' => array(
-			'label' => __('Google+ link', 'aesthetix'),
-			'type' => 'text',
-			'value' => '#'
-		    ),
-		    'scl' => array(
-			'label' => __('Secure Customer Login', 'aesthetix'),
-			'type' => 'text',
-			'value' => 'https://ebanking.ibanknevis.com/APP_UBX_PROD/'
 		    ),
 		)
 	    ),

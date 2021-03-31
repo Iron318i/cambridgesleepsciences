@@ -1,6 +1,6 @@
 {
     "browserSyncOptions": {
-	"proxy": "http://cambridgesleepsciences.gip.by/",
+	"proxy": "http://newcss.somnowellmarketing.com",
 	"notify": false,
 	"files": [
 	    "./css/*.min.css",

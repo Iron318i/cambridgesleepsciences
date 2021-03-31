@@ -19,9 +19,7 @@ $cambridgesleepsciences_includes = array(
     '/class-wp-bootstrap-navwalker.php', // Load custom WordPress nav walker.
     '/editor.php', // Load Editor functions.
     '/disable-comments.php',
-    '/widgets.php',
     '/svg-support.php',
-	//'/cpt.php'
 );
 
 foreach ($cambridgesleepsciences_includes as $file) {
