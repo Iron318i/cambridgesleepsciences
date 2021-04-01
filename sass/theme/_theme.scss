@@ -73,6 +73,10 @@ select.form-control{
 	justify-content: center;
     }
 }
+.fw-heading.text-center{
+    margin-left: auto;
+    margin-right: auto;
+}
 .page-header{
     position: relative;
     background-color: $blue-dark;
@@ -114,5 +118,15 @@ select.form-control{
     .icon{
 	color: $red;
 	flex: 0 0 rem(30px);
+    }
+}
+.team-member{
+    font-size: 15px;
+    margin-bottom: 2rem;
+    h3{
+	margin-bottom: 0;
+    }
+    .position{
+	color: $blue;
     }
 }

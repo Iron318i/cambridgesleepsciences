@@ -3,9 +3,6 @@
     background-color: $blue;
     .navbar-nav{
 	text-transform: uppercase;
-	> li + li{
-	    border-left: 1px solid rgba(#fff, .3);
-	}
 	.dropdown-toggle:before{
 	    content: '+';
 	    display: inline-block;
@@ -136,6 +133,10 @@
 	    font-weight: 400;
 	    color: #fff;
 	    text-transform: uppercase;
+	}
+	h4{
+	    font-size: 18px;
+	    //margin-bottom: 0;
 	}
 	h5{
 	    font-size: 12px;
@@ -282,6 +283,11 @@
 	.navbar-collapse{
 	    justify-content: flex-end;
 	}
+	.navbar-nav{
+	    > li + li{
+		border-left: 1px solid rgba(#fff, .3);
+	    }
+	}
     }
     .site-footer{
 	.footer-1{
@@ -318,7 +324,7 @@
 }
 @include media-breakpoint-only(lg) {
     .site-header .navbar-nav {
-	font-size: 18px;
+	font-size: 13px;
     }
 }
 @include media-breakpoint-up(xl) {
@@ -352,6 +358,18 @@
     }
 }
 @include media-breakpoint-down(md) {
+    .site-header{
+	.navbar-nav{
+	    padding: 1.5rem 0;
+	    font-size: 18px;
+	    li+li{
+		border-top: 1px solid #fff;
+	    }
+	    .dropdown-menu{
+		border: 0 none;
+	    }
+	}
+    }
     .bottom-footer{
 	.nav {
 	    margin-bottom: .5rem;
