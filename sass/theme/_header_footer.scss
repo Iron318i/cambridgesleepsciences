@@ -1,10 +1,8 @@
 /*Site-header*/
-
 .site-header{
     background-color: $blue;
     .navbar-nav{
 	text-transform: uppercase;
-	font-size: 18px;
 	> li + li{
 	    border-left: 1px solid rgba(#fff, .3);
 	}
@@ -318,8 +316,16 @@
 	}
     }
 }
+@include media-breakpoint-only(lg) {
+    .site-header .navbar-nav {
+	font-size: 18px;
+    }
+}
 @include media-breakpoint-up(xl) {
     .site-header{
+	.navbar-nav{
+	    font-size: 13px;
+	}
 	.container{
 	    max-width: 1722px;
 	}
@@ -338,6 +344,11 @@
 	    padding-right: 72px;
 	    padding-left: 72px;
 	}
+    }
+}
+@include media-breakpoint-down(lg) {
+    .logo-link{
+	max-width: 180px;
     }
 }
 @include media-breakpoint-down(md) {

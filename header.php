@@ -21,7 +21,7 @@ defined('ABSPATH') || exit;
     <body <?php body_class('header-hide'); ?> <?php cambridgesleepsciences_body_attributes(); ?>>
 	<?php do_action('wp_body_open'); ?>
 	<header class="site-header">
-	    <nav class="navbar navbar-expand-md navbar-dark">
+	    <nav class="navbar navbar-expand-lg navbar-dark">
 		<div class="container">
 		    <a href="<?php echo site_url(); ?>" class="logo-link" rel="home"><img src="<?php echo get_template_directory_uri() ?>/img/main-logo.png" srcset="<?php echo get_template_directory_uri() ?>/img/main-logo-2x.png 2x" class="img-fluid" alt="<?php bloginfo('name'); ?>"></a>
 		    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
