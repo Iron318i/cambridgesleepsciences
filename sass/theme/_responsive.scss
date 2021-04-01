@@ -1,9 +1,12 @@
-@include media-breakpoint-down(md) {
-    .content-section{
-	font-size: 16px;
+@include media-breakpoint-up(sm) {
+    .page-header{
+	.h1{
+	    font-size: 2.62vw;
+	    font-weight: 400;
+	}
     }
 }
-@media(min-width: 1360px){
+@include media-breakpoint-up(lg) {
     .content-section{
 	.container{
 	    padding-right: 28px;
@@ -18,5 +21,11 @@
 	    padding-right: 28px;
 	    padding-left: 28px;
 	}
+    }
+}
+
+@include media-breakpoint-down(md) {
+    .content-section{
+	font-size: 16px;
     }
 }
