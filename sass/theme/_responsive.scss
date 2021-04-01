@@ -3,3 +3,20 @@
 	font-size: 16px;
     }
 }
+@media(min-width: 1360px){
+    .content-section{
+	.container{
+	    padding-right: 28px;
+	    padding-left: 28px;
+	    max-width: 1104px;
+	}
+	.row{
+	    margin-left: -28px;
+	    margin-right: -28px;
+	}
+	.col-12{
+	    padding-right: 28px;
+	    padding-left: 28px;
+	}
+    }
+}

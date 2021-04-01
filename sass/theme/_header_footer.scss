@@ -73,6 +73,18 @@
 	display: inline-block;
 	max-width: 184px;
     }
+    #footer-menu{
+	.menu-item{
+	    flex: 0 0 50%;
+	}
+	a{
+	    color: #fff;
+	    text-transform: uppercase;
+	    &:hover{
+		color: $primary;
+	    }
+	}
+    }
 }
 .bottom-footer{
     background-color: #0c344c;
