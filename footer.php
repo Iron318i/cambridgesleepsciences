@@ -31,6 +31,17 @@ defined('ABSPATH') || exit;
 		?>
 	    </div>
 	    <div class="col-md-4 footer-3">
+		<h4>Connect  with  Us</h4>
+		<h5>Cambridge Sleep Sciences:</h5>
+		<ul class="nav">
+		    <li><a href="<?php echo fw_get_db_settings_option('css_yt') ?>" target="_blank"><?php the_svg('youtube') ?></a></li>
+		    <li><a href="<?php echo fw_get_db_settings_option('css_in') ?>" target="_blank"><?php the_svg('linkedin') ?></a></li>
+		</ul>
+		<h5>SleepHub:</h5>
+		<ul class="nav">
+		    <li><a href="<?php echo fw_get_db_settings_option('sh_yt') ?>" target="_blank"><?php the_svg('youtube') ?></a></li>
+		    <li><a href="<?php echo fw_get_db_settings_option('sh_in') ?>" target="_blank"><?php the_svg('linkedin') ?></a></li>
+		</ul>
 	    </div>
 	</div>
     </div>

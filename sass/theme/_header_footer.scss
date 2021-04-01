@@ -66,23 +66,51 @@
     }
 }
 .site-footer{
-    padding: 3rem 0;
+    padding: 3.2rem 0;
     background-color: #0c4053;
     color: #fff;
+    border-top: 10px solid #23a5d5;
     .logo-link{
 	display: inline-block;
 	max-width: 184px;
     }
     #footer-menu{
 	.menu-item{
-	    flex: 0 0 50%;
+	    margin-bottom: 1.3rem;
+	    flex: 0 0 100%;
+	    max-width: 100%;
 	}
 	a{
+	    font-size: 1.1em;
 	    color: #fff;
 	    text-transform: uppercase;
 	    &:hover{
 		color: $primary;
 	    }
+	}
+    }
+    .footer-3{
+	h4,h5{
+	    font-weight: 400;
+	    color: #fff;
+	    text-transform: uppercase;
+	}
+	h5{
+	    font-size: 12px;
+	    //margin-bottom: 0;
+	}
+	.nav{
+	    margin-bottom: 1rem;
+	    a:hover{
+		color: #fff;
+	    }
+	    li+li{
+		margin-left: 10px;
+	    }
+	    svg{
+		width: rem(32px);
+		height: rem(32px);
+	    };
 	}
     }
 }
@@ -124,6 +152,9 @@
     }
 }
 @include media-breakpoint-up(sm) {
+    .site-footer{
+	font-size: 12px;
+    }
     .bottom-footer{
 	padding: rem(30px 0);
 	.nav{
@@ -148,7 +179,61 @@
 	}
     }
 }
+@include media-breakpoint-up(md) {
+    .site-footer{
+	.col-md-4+.col-md-4{
+	    &:before{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 1px;
+		background-color: #187394;
+		z-index: 1;
+	    }
+	    &:after{
+		content: "";
+		display: inline-block;
+		position: absolute;
+		left: 0;
+		top: 16px;
+		bottom: 16px;
+		width: 1px;
+		background-color: #1d8cb5;
+		z-index: 2;
+	    }
+	}
+    }
+}
 @include media-breakpoint-up(lg) {
+    .site-footer{
+	.footer-1{
+	    flex: 0 0 37%;
+	    max-width: 37%;
+	}
+	.footer-2{
+	    flex: 0 0 36%;
+	    max-width: 36%;
+	}
+	.footer-3{
+	    flex: 0 0 27%;
+	    max-width: 27%;
+	}
+    }
+    #footer-menu{
+	.menu-item{
+	    &:nth-child(odd){
+		flex: 0 0 62%;
+		max-width: 62%;
+	    }
+	    &:nth-child(even){
+		flex: 0 0 38%;
+		max-width: 38%;
+	    }
+	}
+    }
     .bottom-footer{
 	.row{
 	    flex-direction: row-reverse;
@@ -173,6 +258,23 @@
 	    li{
 		margin-bottom: .5rem;
 	    }
+	}
+    }
+}
+@media(min-width: 1360px){
+    .site-footer{
+	.container{
+	    padding-right: 72px;
+	    padding-left: 72px;
+	    max-width: 1192px;
+	}
+	.row{
+	    margin-left: -72px;
+	    margin-right: -72px;
+	}
+	.col-md-4{
+	    padding-right: 72px;
+	    padding-left: 72px;
 	}
     }
 }
