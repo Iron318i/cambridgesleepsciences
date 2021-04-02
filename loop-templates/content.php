@@ -15,10 +15,10 @@ defined('ABSPATH') || exit;
     );
     ?>
     <div class="row">
-	<div class="col post-img">
+	<div class="col-12 post-img">
 	    <?php echo get_the_post_thumbnail($post->ID, 'post-thumb'); ?>
 	</div>
-	<div class="col entry-content">
+	<div class="col-12 entry-content">
 	    <?php the_excerpt(); ?>
 	    <?php
 	    wp_link_pages(
