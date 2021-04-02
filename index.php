@@ -27,41 +27,28 @@ get_header();
 	    } elseif (is_search()) {
 		echo 'Search';
 	    } else {
-		echo 'BLOG';
+		echo 'News';
 	    }
 	    ?></div>
     </div>
 </div>
 <div class="container py-3" id="content" tabindex="-1">
-    <div class="fw-heading fw-heading-h2 text-center mb-3">
-        <h2 class="fw-special-title text-uppercase text-primary"><?php
-	    if (is_404()) {
-		echo '404';
-	    } elseif (is_search()) {
-		echo 'Search';
-	    } else {
-		echo 'BLOG';
-	    }
-	    ?></h2>
-    </div>
     <?php
     if (have_posts()) {
 	// Start the Loop.
 	?>
-        <div class="row">
-	    <?php
-	    while (have_posts()) {
-		the_post();
+	<?php
+	while (have_posts()) {
+	    the_post();
 
-		/*
-		 * Include the Post-Format-specific template for the content.
-		 * If you want to override this in a child theme, then include a file
-		 * called content-___.php (where ___ is the Post Format name) and that will be used instead.
-		 */
-		get_template_part('loop-templates/content', get_post_format());
-	    }
-	    ?>
-        </div><!-- .row -->
+	    /*
+	     * Include the Post-Format-specific template for the content.
+	     * If you want to override this in a child theme, then include a file
+	     * called content-___.php (where ___ is the Post Format name) and that will be used instead.
+	     */
+	    get_template_part('loop-templates/content', get_post_format());
+	}
+	?>
 	<?php
     } else {
 	get_template_part('loop-templates/content', 'none');

@@ -36,5 +36,16 @@ $options = array(
 		)
 	    ),
 	)
-    )
+    ),
+    'headers-box' => array(
+	'title' => __('Page headers', 'aesthetix'),
+	'type' => 'box',
+	'options' => array(
+	    'ph_blog' => array(
+		'type' => 'upload',
+		'label' => __('News header', 'aesthetix'),
+		'desc' => __('Choose Image 1920*375px', 'aesthetix')
+	    ),
+	)
+    ),
 );

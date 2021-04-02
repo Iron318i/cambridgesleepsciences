@@ -37,6 +37,21 @@
 	    padding-left: 22px;
 	}
     }
+    #following-areas{
+	.container{
+	    padding-right: 10px;
+	    padding-left: 10px;
+	    max-width: 1068px;
+	}
+	.row{
+	    margin-left: -10px;
+	    margin-right: -10px;
+	}
+	.col-12{
+	    padding-right: 10px;
+	    padding-left: 10px;
+	}
+    }
 }
 
 @include media-breakpoint-down(md) {

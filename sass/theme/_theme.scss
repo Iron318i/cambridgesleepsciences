@@ -130,3 +130,14 @@ select.form-control{
 	color: $blue;
     }
 }
+.post-card{
+    .entry-title {
+	margin-bottom: 1.5rem;
+	a{
+	    color: #0c4053;
+	}
+    }
+    + .post-card{
+	margin-top: 2rem;
+    }
+}
