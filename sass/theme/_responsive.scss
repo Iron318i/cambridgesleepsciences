@@ -36,6 +36,20 @@
 	    margin-left: rem(70px);
 	}
     }
+    #contact-us{
+	.row-bottom{
+	    margin-right: -15px!important;
+	    margin-left: -15px!important;;
+	    .col-md-4{
+		flex: 0 0 190px;
+		max-width: 190px;
+	    }
+	    .col-md-8{
+		flex: 0 0 calc(100% - 190px);
+		max-width: calc(100% - 190px);
+	    }
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     .content-section{
@@ -53,6 +67,7 @@
 	    padding-left: 28px;
 	}
     }
+    #contact-us,
     #our-people{
 	.container{
 	    padding-right: 22px;
@@ -81,6 +96,32 @@
 	.col-12{
 	    padding-right: 10px;
 	    padding-left: 10px;
+	}
+    }
+    #contact-us{
+	.wpcf7-textarea{
+	    min-height: 306px;
+	}
+	.col-lg-8{
+	    padding-right: 44px;
+	    flex: 0 0 70%;
+	    max-width: 70%;
+	}
+	.col-lg-4{
+	    padding-left: 44px;
+	    position: relative;
+	    flex: 0 0 30%;
+	    max-width: 30%;
+	    &:before{
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 93px;
+		bottom: 0;
+		width: 1px;
+		background-color: #dadbdb;
+	    }
 	}
     }
 }

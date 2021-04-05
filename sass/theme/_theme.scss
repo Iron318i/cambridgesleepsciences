@@ -27,6 +27,9 @@ body{
 .btn{
     text-transform: uppercase;
 }
+label{
+    color: #6a6a6a;
+}
 .form-control {
     background-clip: border-box;
 }
@@ -215,5 +218,15 @@ select.form-control{
 	margin: 0;
 	color: #23a5d5;
 	font-size: 15px;
+    }
+}
+#contact-us{
+    .fw-heading-h2{
+	.fw-special-title{
+	    background-color: #0c4053;
+	    color: #fff;
+	    font-weight: 400;
+	    padding: rem(13px 20px);
+	}
     }
 }
