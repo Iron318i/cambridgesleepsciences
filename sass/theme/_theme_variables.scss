@@ -3,7 +3,7 @@
 $white:    #fff;
 //$gray-100: #f6f6f6;
 //$gray-200: #e8e8e8 !default;
-//$gray-300: #dee2e6 !default;
+$gray-300: #c3c3c3;
 $gray-400: #cdc5c0;
 $gray-500: #9a9a9a;
 //$gray-600: #7b7b7b;
@@ -130,26 +130,26 @@ $navbar-nav-link-padding-x: rem(17px);
 $dropdown-link-color: $navbar-light-color;
 $dropdown-item-padding-x: .5rem;
 // Forms
-$form-grid-gutter-width: 6px;
+$form-grid-gutter-width: 10px;
 
-$form-group-margin-bottom: rem(30px);
+$form-group-margin-bottom: rem(11px);
 $input-padding-x: rem(20px);
 $input-padding-y: rem(9px);
 
-$input-border-color: $white;
+$input-border-color: $gray-300;
 $input-box-shadow: 0 none;
 $input-placeholder-color: $gray-500;
 
 
-$input-font-size: rem(18px);
+//$input-font-size: rem(18px);
 
-$custom-control-indicator-size: rem(19px);
-$custom-control-label-color: $white;
-$custom-control-indicator-border-color: $white;
+//$custom-control-indicator-size: rem(19px);
+$custom-control-label-color: #6a6a6a;
+//$custom-control-indicator-border-color: $white;
 
-$custom-control-indicator-checked-color: $black;
-$custom-control-indicator-checked-bg: $white;
-$custom-control-indicator-bg-size: 75% 75%;
+//$custom-control-indicator-checked-color: $black;
+//$custom-control-indicator-checked-bg: $white;
+//$custom-control-indicator-bg-size: 75% 75%;
 
 // Buttons
 //

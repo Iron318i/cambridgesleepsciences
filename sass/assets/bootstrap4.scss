@@ -24,7 +24,7 @@ $theme-colors: map-remove($theme-colors, "secondary", "success", "info","warning
 @import "../../src/sass/bootstrap4/dropdown";
 //@import "../../src/sass/bootstrap4/button-group";
 //@import "../../src/sass/bootstrap4/input-group";
-//@import "../../src/sass/bootstrap4/custom-forms";
+@import "../../src/sass/bootstrap4/custom-forms";
 @import "../../src/sass/bootstrap4/nav";
 @import "../../src/sass/bootstrap4/navbar";
 //@import "../../src/sass/bootstrap4/card";

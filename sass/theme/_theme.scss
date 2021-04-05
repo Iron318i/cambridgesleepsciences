@@ -40,6 +40,32 @@ select.form-control{
     appearance:none;
     background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 451.8 451.8' fill='%23c4c4c4'%3E%3Cpath d='M203.6 345.4L9.3 151.2c-12.4-12.4-12.4-32.4 0-44.8C21.7 94 41.7 94 54 106.4l171.9 171.9 171.9-171.9c12.4-12.4 32.4-12.4 44.7 0 12.4 12.4 12.4 32.4 0 44.8L248.3 345.4c-6.2 6.2-14.3 9.3-22.4 9.3-8.1 0-16.2-3.1-22.3-9.3z'%3E%3C/path%3E%3C/svg%3E") calc(100% - 20px) 50%/15px no-repeat;
 }
+.form-group{
+    position: relative;
+    label:not(.custom-control-label){
+	background-color: #fff;
+	padding: 0 5px;
+	font-weight: 400;
+	position: absolute;
+	z-index: 2;
+	left: 10px;
+	top: 21px;
+	transform: translateY(-50%);
+	transition: top .3s ease-in , font-size .3s ease-in;
+	line-height: 1;
+	.required{
+	    color: $red;
+	}
+    }
+    &.on-focus label {
+	top: 0;
+	font-size: 13px;
+    }
+    .form-control{
+	position: relative;
+	z-index: 1;
+    }
+}
 .icon{
     svg{
 	width: 1em;
