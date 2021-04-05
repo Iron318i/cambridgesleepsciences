@@ -31,6 +31,11 @@
 	    margin-left: rem(70px);
 	}
     }
+    .post-recent{
+	.btn .icon{
+	    margin-left: rem(70px);
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     .content-section{

@@ -57,5 +57,8 @@ get_header();
     <!-- The pagination component -->
     <?php cambridgesleepsciences_pagination(); ?>
 </div><!-- #content -->
+<div class="container py-3">
+    <?php echo do_shortcode('[cta_block shortcode="" _fw_coder="aggressive"][/cta_block]') ?>
+</div>
 <?php
 get_footer();

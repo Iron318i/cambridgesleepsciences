@@ -26,15 +26,12 @@ get_header();
     }
     ?>
 </div><!-- #content -->
-<section class="related-articles pb-3">
+<section class="related-articles pb-4">
     <div class="container">
-	<div class="fw-heading fw-heading-h2 text-center mb-3">
-	    <h2 class="fw-special-title text-uppercase text-primary"><?php _ex('RECENT POSTS', 'cambridgesleepsciences') ?></h2>
-	</div>
 	<div class="row">
 	    <?php
 	    $args = array(
-		'posts_per_page' => 3,
+		'posts_per_page' => 2,
 		'post_type' => 'post',
 		'post__not_in' => array($post->ID)
 	    );
@@ -44,7 +41,7 @@ get_header();
 	    if ($query->have_posts()) :
 		while ($query->have_posts()) :
 		    $query->the_post();
-		    get_template_part('loop-templates/content', get_post_format());
+		    get_template_part('loop-templates/content', 'recent');
 		endwhile;
 		?>
 	    <?php endif; ?>

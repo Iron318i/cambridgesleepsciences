@@ -150,12 +150,28 @@ select.form-control{
     }
     .btn{
 	margin-top: 1rem;
+	.icon{
+	    margin-left: rem(30px);
+	    font-size: .8em;
+	    position: relative;
+	    top: -2px;
+	}
     }
-    .icon{
-	margin-left: rem(30px);
-	font-size: .8em;
-	position: relative;
-	top: -2px;
+}
+.post-recent{
+    .entry-title {
+	a{
+	    color: #0c4053;
+	}
+    }
+    .btn{
+	margin-top: 1rem;
+	.icon{
+	    margin-left: rem(30px);
+	    font-size: .8em;
+	    position: relative;
+	    top: -2px;
+	}
     }
 }
 .page-block{
