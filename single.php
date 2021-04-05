@@ -26,7 +26,7 @@ get_header();
     }
     ?>
 </div><!-- #content -->
-<section class="related-articles pb-4">
+<section class="related-articles pb-2">
     <div class="container">
 	<div class="row">
 	    <?php
