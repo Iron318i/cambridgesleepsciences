@@ -408,7 +408,6 @@
 }
 @include media-breakpoint-down(xs) {
     .bottom-footer{
-	text-align: center;
 	font-size: 14px;
 	.nav {
 	    flex-direction: column;
