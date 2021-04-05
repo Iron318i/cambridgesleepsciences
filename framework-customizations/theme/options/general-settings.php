@@ -33,6 +33,16 @@ $options = array(
 			'type' => 'text',
 			'value' => '#'
 		    ),
+		    'address' => array(
+			'label' => __('Address', 'cambridgesleepsciences'),
+			'type' => 'text',
+			'value' => '115b Innovation Drive<br> Milton, England OX14 4RZ, GB'
+		    ),
+		    'email' => array(
+			'label' => __('Email', 'cambridgesleepsciences'),
+			'type' => 'text',
+			'value' => 'hello@cambridgesleepsciences.com'
+		    ),
 		)
 	    ),
 	)

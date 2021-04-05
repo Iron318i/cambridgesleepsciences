@@ -8,22 +8,19 @@ if (!defined('FW')) {
  */
 ?>
 <div class="contact-info">
-    <div class="info-box">
-	<div class="img">
-	    <?php echo wp_get_attachment_image($atts['image_hours']["attachment_id"], 'thumbnail'); ?>
-	</div>
+    <?php echo $atts['info']; ?>
+    <div class="info-box mt-2">
+	<?php the_svg('placeholder') ?>
 	<div class="content">
-	    <h3>Store Hours</h3>
-	    <?php echo $atts['hours']; ?>
+	    <strong>Mailing Address:</strong><br>
+	    <span style="font-size: 1rem;"><?php echo fw_get_db_settings_option('address') ?></span>
 	</div>
     </div>
-    <div class="info-box mt-2 mt-md-4">
-	<div class="img">
-	    <?php echo wp_get_attachment_image($atts['image_location']["attachment_id"], 'thumbnail'); ?>
-	</div>
+    <div class="info-box mt-2">
+	<?php the_svg('email') ?>
 	<div class="content">
-	    <h3>Location</h3>
-	    <?php echo $atts['location']; ?>
+	    <strong>For any media enquiries, please contact us at:</strong><br>
+	    <a href="mailto:<?php echo antispambot(fw_get_db_settings_option('email')) ?>" class="mailto"><?php echo antispambot(fw_get_db_settings_option('email')) ?></a>
 	</div>
     </div>
 </div>

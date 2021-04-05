@@ -50,7 +50,7 @@ select.form-control{
 	padding: 0 5px;
 	font-weight: 400;
 	position: absolute;
-	z-index: 2;
+	z-index: 1;
 	left: 10px;
 	top: 21px;
 	transform: translateY(-50%);
@@ -63,10 +63,12 @@ select.form-control{
     &.on-focus label {
 	top: 0;
 	font-size: 13px;
+	z-index: 3;
     }
     .form-control{
 	position: relative;
-	z-index: 1;
+	z-index: 2;
+	background-color: transparent;
     }
 }
 .icon{
@@ -81,8 +83,11 @@ select.form-control{
 }
 .invalid{
     .form-control:invalid{
-	border-color: $primary;
+	border-color: $red;
     }
+}
+.screen-reader-response{
+    display: none;
 }
 /*Section*/
 .content-section{
@@ -150,6 +155,11 @@ select.form-control{
     .icon{
 	color: $red;
 	flex: 0 0 rem(30px);
+    }
+}
+.text-block{
+    a{
+	text-decoration: underline;
     }
 }
 .team-member{
@@ -227,6 +237,26 @@ select.form-control{
 	    color: #fff;
 	    font-weight: 400;
 	    padding: rem(13px 20px);
+	}
+    }
+}
+.contact-info{
+    color: #6a6a6a;
+    font-size: rem(16px);
+    line-height: 1.4;
+    a{
+	text-decoration: underline;
+    }
+    .info-box{
+	display: flex;
+	.icon{
+	    flex: 0 0 40px;
+	    max-width: 40px;
+	}
+	.content{
+	    flex: 0 0 calc(100% - 40px);
+	    max-width:  calc(100% - 40px);
+	    padding-left: 1rem;
 	}
     }
 }
