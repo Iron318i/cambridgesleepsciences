@@ -246,12 +246,18 @@ select.form-control{
     line-height: 1.4;
     a{
 	text-decoration: underline;
+	word-break: break-all;
     }
     .info-box{
 	display: flex;
 	.icon{
 	    flex: 0 0 40px;
 	    max-width: 40px;
+	    color: $primary;
+	    svg{
+		width: rem(40px);
+		height: rem(40px);
+	    }
 	}
 	.content{
 	    flex: 0 0 calc(100% - 40px);

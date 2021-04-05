@@ -118,10 +118,15 @@
 		position: absolute;
 		left: 0;
 		top: 93px;
-		bottom: 0;
+		bottom: 60px;
 		width: 1px;
 		background-color: #dadbdb;
 	    }
+	}
+    }
+    #map{
+	.embed-responsive-16by9::before {
+	    padding-top: 30%;
 	}
     }
 }
