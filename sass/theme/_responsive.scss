@@ -7,11 +7,16 @@
     }
 }
 @include media-breakpoint-up(md) {
+    .btn-lg{
+	padding: 1.25rem 2rem;
+    }
     .post-card{
 	&:nth-child(odd) .row{
 	    flex-direction: row-reverse;
-	    .btn{
-		margin-left: auto;
+	}
+	&:nth-child(even) .row{
+	    .read-more{
+		text-align: right;
 	    }
 	}
 	.post-img{
@@ -21,6 +26,9 @@
 	.entry-content{
 	    flex: 0 0 45%;
 	    max-width: 45%;
+	}
+	.icon{
+	    margin-left: rem(70px);
 	}
     }
 }

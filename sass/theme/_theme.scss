@@ -24,6 +24,9 @@ body{
 .font-weight-medium{
     font-weight: 500;
 }
+.btn{
+    text-transform: uppercase;
+}
 .form-control {
     background-clip: border-box;
 }
@@ -137,10 +140,21 @@ select.form-control{
 	    color: #0c4053;
 	}
     }
+    .entry-content{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+    }
     + .post-card{
 	margin-top: 2rem;
     }
     .btn{
 	margin-top: 1rem;
+    }
+    .icon{
+	margin-left: rem(30px);
+	font-size: .8em;
+	position: relative;
+	top: -2px;
     }
 }

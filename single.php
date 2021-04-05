@@ -15,21 +15,15 @@ get_header();
 	<img src="<?php echo wp_get_attachment_image_url(fw_get_db_settings_option('ph_blog')["attachment_id"], 'page-header-md') ?>" alt="<?php the_title() ?>">
     </picture>
     <div class="container">
-	<div class="h1"><?php echo 'BLOG'; ?></div>
+	<div class="h1"><?php echo 'News'; ?></div>
     </div>
 </div>
-<div class="container pt-3">
-    <div class="fw-heading fw-heading-h2 text-center mb-3">
-        <h2 class="fw-special-title text-uppercase text-primary"><?php echo 'BLOG'; ?></h2>
-    </div>
-</div>
-<div class="container single-container mb-3" id="content" tabindex="-1">
+<div class="container single-container py-3" id="content" tabindex="-1">
     <?php
     while (have_posts()) {
 	the_post();
 	get_template_part('loop-templates/content', 'single');
     }
-    echo do_shortcode('[Sassy_Social_Share]');
     ?>
 </div><!-- #content -->
 <section class="related-articles pb-3">

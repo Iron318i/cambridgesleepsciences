@@ -9,11 +9,10 @@ defined('ABSPATH') || exit;
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
     <header class="entry-header mb-2">
+	<p class="post-date"><?php echo get_the_date(); ?></p>
 	<?php the_title('<h1 class="entry-title">', '</h1>'); ?>
-	<div class="entry-meta">
-	    <?php cambridgesleepsciences_posted_on(); ?>
-	</div><!-- .entry-meta -->
-    </header><!-- .entry-header -->
+    </header>
+    <?php echo get_the_post_thumbnail($post->ID, 'large'); ?>
     <div class="entry-content mt-2">
 	<?php
 	echo wpautop($post->post_content);
