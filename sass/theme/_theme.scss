@@ -283,11 +283,13 @@ select.form-control{
     background-color: #000211;
     background-image: url(../img/main-banner.jpg);
     max-width: 2000px;
+    margin-left: auto;
+    margin-right: auto;
     position: relative;
     &:before{
 	content: '';
 	position: absolute;
-	left: -5.2vw;
+	left: -11vw;
 	top: -5vw;
 	display: block;
 	width: 50.5vw;
@@ -304,6 +306,7 @@ select.form-control{
 	align-content: center;
     }
     .fw-special-title{
+	margin-top: 4vw;
 	color: #fff;
 	font-size: 5.1vw;
 	line-height: 1;
@@ -311,6 +314,27 @@ select.form-control{
 	max-width: 24.5vw;
 	strong{
 	    font-weight: 900;
+	}
+    }
+    .btn-wrp{
+	margin-top: 2vw;
+    }
+    .btn-link{
+	color: #0c4053;
+	text-transform: none;
+	@include font-size(rem(22px));
+	font-weight: 700;
+	.icon{
+	    margin-right: .7rem;
+	    svg{
+		position: relative;
+		top: -.1em;
+		width: 1.5em;
+		height: 1.5em;
+	    }
+	}
+	&:hover{
+	    color: #fff;
 	}
     }
 }

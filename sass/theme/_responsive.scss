@@ -158,7 +158,33 @@
 	}
     }
 }
-
+@media(min-width: 1700px){
+    #main-banner{
+	&:before{
+	    left: -5.2vw;
+	    top: -5vw;
+	}
+    }
+}
+@media(min-width: 2000px){
+    #main-banner{
+	&:before{
+	    content: '';
+	    position: absolute;
+	    left: -100px;
+	    top: -95px;
+	    width: 970px;
+	    height: 970px;
+	}
+	.row{
+	    height: 815px;
+	}
+	.fw-special-title{
+	    font-size: 98px;
+	    max-width: 470px;
+	}
+    }
+}
 @include media-breakpoint-down(md) {
     .content-section{
 	font-size: 16px;
