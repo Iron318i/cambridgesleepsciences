@@ -52,6 +52,42 @@
 	    }
 	}
     }
+    #main-banner{
+	background-image: url(../img/main-banner.jpg);
+	&:before{
+	    left: -11vw;
+	    top: -5vw;
+	    width: 50.5vw;
+	    height: 50.5vw;
+	}
+	.row{
+	    height: 50vw;
+	    align-items: center;
+	}
+	.fw-special-title{
+	    margin-top: 0;
+	    font-size: 5.1vw;
+	    max-width: 24.5vw;
+	    strong{
+		font-weight: 900;
+	    }
+	}
+	.btn-wrp{
+	    margin-top: 2vw;
+	}
+	.btn-link{
+	    font-size: rem(18px);
+	    .icon{
+		margin-right: .7rem;
+		svg{
+		    position: relative;
+		    top: -.1em;
+		    width: 1.5em;
+		    height: 1.5em;
+		}
+	    }
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     .content-section{

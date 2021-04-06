@@ -270,7 +270,7 @@ select.form-control{
 }
 #main-banner{
     background-color: #000211;
-    background-image: url(../img/main-banner.jpg);
+    background-image: url(../img/main-banner-sm.jpg);
     position: relative;
     .container{
 	max-width: 100%;
@@ -279,10 +279,10 @@ select.form-control{
 	content: '';
 	position: absolute;
 	left: -11vw;
-	top: -5vw;
+	top: -9vw;
 	display: block;
-	width: 50.5vw;
-	height: 50.5vw;
+	width: 63vw;
+	height: 63vw;
 	background-color: $primary;
 	border-radius: 50%;
 	z-index: 3;
@@ -291,34 +291,35 @@ select.form-control{
 	z-index: 4;
     }
     .row{
-	height: 50vw;
-	align-content: center;
+	height: 65vw;
     }
     .fw-special-title{
+	margin-top: 10vw;
 	color: #fff;
-	font-size: 5.1vw;
+	font-size: 7.5vw;
 	line-height: 1;
 	font-weight: 400;
-	max-width: 24.5vw;
+	max-width: 42vw;
 	strong{
 	    font-weight: 900;
 	}
     }
     .btn-wrp{
-	margin-top: 2vw;
+	margin-top: 1vw;
     }
     .btn-link{
 	color: #0c4053;
 	text-transform: none;
-	font-size: rem(18px);
+	font-size: 3.1vw;
 	font-weight: 700;
+	padding-left: 0;
 	.icon{
-	    margin-right: .7rem;
+	    margin-right: .1rem;
 	    svg{
 		position: relative;
 		top: -.1em;
-		width: 1.5em;
-		height: 1.5em;
+		width: 1.2em;
+		height: 1.2em;
 	    }
 	}
 	&:hover{
