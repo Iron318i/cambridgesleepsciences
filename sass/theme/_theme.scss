@@ -262,3 +262,27 @@ select.form-control{
 	}
     }
 }
+.home{
+    position: relative;
+    .site-header{
+	position: absolute;
+	z-index: 999;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: none;
+	padding-top: 47px;
+    }
+    #main-menu{
+	background-color: $primary;
+	padding: rem(24px 32px);
+	border-radius: 3rem;
+    }
+}
+#main-banner{
+    background-image: url(../img/main-banner.jpg);
+    height: 42.45vw;
+    .fw-heading{
+	margin-top: 5rem;
+    }
+}

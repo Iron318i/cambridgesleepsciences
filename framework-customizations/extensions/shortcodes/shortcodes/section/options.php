@@ -25,15 +25,6 @@ $options = array(
 	    'label' => __('Div', '{domain}'),
 	),
     ),
-    'container_size' => array(
-	'type' => 'select',
-	'label' => __('Container size', 'fw'),
-	'choices' => array(
-	    '' => '---',
-	    'mw-1525' => '1525px',
-	    'mw-1170' => '1170px',
-	)
-    ),
     'bgc' => array(
 	'type' => 'select',
 	'label' => __('Background Color', 'fw'),

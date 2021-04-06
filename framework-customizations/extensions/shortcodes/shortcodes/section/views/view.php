@@ -18,7 +18,6 @@ if (!empty($atts['background_image']) && !empty($atts['background_image']['data'
 $section_style = ( $bg_color || $bg_image ) ? '' . esc_attr($bg_color . $bg_image) . '' : '';
 
 $container_class = ( isset($atts['is_fullwidth']) && $atts['is_fullwidth'] ) ? 'container-fluid' : 'container';
-$container_class .= ( isset($atts['container_size']) && $atts['container_size'] ) ? ' ' . $atts['container_size'] : '';
 $custome_class = ( isset($atts['custome_class']) && $atts['custome_class'] ) ? ' ' . $atts['custome_class'] . '' : '';
 $custome_class .= ( isset($atts['bgc']) && $atts['bgc'] ) ? ' ' . $atts['bgc'] . '' : '';
 $row_class = ( isset($atts['justify_content']) && $atts['justify_content'] ) ? ' ' . $atts['justify_content'] . '' : '';
