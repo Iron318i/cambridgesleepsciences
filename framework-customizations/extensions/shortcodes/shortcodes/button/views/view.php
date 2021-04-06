@@ -5,7 +5,7 @@
 
 <div class="btn-wrp">
     <a href="<?php echo do_shortcode($atts['link']) ?>" target="<?php echo esc_attr($atts['target']) ?>" class="btn <?php echo esc_attr($class); ?>">
-	<span><?php echo $atts['label']; ?></span>
+	<span><?php echo do_shortcode($atts['label']); ?></span>
 	<?php
 	if ($atts['arrow']) {
 	    the_svg('right-arrow');
