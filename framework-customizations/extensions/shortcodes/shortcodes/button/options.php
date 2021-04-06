@@ -50,4 +50,8 @@ $options = array(
 	    'btn-sm' => __('Small', 'fw'),
 	)
     ),
+    'arrow' => array(
+	'type' => 'switch',
+	'label' => __('Arrow', 'fw'),
+    ),
 );

@@ -15,25 +15,6 @@ $options = array(
 	'label' => __('Content', 'fw'),
 	'desc' => __('Enter some content for this texblock', 'fw')
     ),
-    'fsz' => array(
-	'type' => 'select',
-	'label' => __('Font Size', 'fw'),
-	'choices' => array(
-	    '' => '---',
-	    'fsz-18' => '18px',
-	    'fsz-16' => '16px',
-	)
-    ),
-    'color' => array(
-	'type' => 'select',
-	'label' => __('Text color', 'fw'),
-	'choices' => array(
-	    '' => '---',
-	    'text-blue' => 'Blue',
-	    'text-cadet-blue' => 'Cadet Blue',
-	    'text-black' => 'Black',
-	)
-    ),
     'mw' => array(
 	'type' => 'text',
 	'label' => __('Max Width', 'fw'),
@@ -42,6 +23,16 @@ $options = array(
     'centered' => array(
 	'type' => 'switch',
 	'label' => __('Centered', 'fw'),
+    ),
+    'margin_bottom' => array(
+	'label' => __('Margin Bottom', 'fw'),
+	'type' => 'slider',
+	'value' => 0,
+	'properties' => array(
+	    'min' => 0,
+	    'max' => 5,
+	    'step' => 1, // Set slider step. Always > 0. Could be fractional.
+	),
     ),
     'class' => array(
 	'type' => 'text',

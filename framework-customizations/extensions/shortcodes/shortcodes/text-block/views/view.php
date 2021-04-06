@@ -12,8 +12,25 @@ if ($atts['mw'] > 0) {
 }
 $custome_class = ( isset($atts['class']) && $atts['class'] ) ? ' ' . $atts['class'] . '' : '';
 $custome_class .= ($atts['centered']) ? ' mx-auto' : '';
-$custome_class .= ( isset($atts['fsz']) && $atts['fsz'] ) ? ' ' . $atts['fsz'] . '' : '';
-$custome_class .= ( isset($atts['color']) && $atts['color'] ) ? ' ' . $atts['color'] . '' : '';
+switch ($atts['margin_bottom']) {
+    case 0:
+	break;
+    case 1:
+	$custome_class .= ' mb-1';
+	break;
+    case 2:
+	$custome_class .= ' mb-1 mb-md-2';
+	break;
+    case 3:
+	$custome_class .= ' mb-2 mb-md-3';
+	break;
+    case 4:
+	$custome_class .= ' mb-3 mb-md-4';
+	break;
+    case 5:
+	$custome_class .= ' mb-4 mb-md-5';
+	break;
+}
 ?>
 <div class="text-block<?php echo!empty($atts['justify_content']) ? ' text-justify' : ''; ?> <?php echo $custome_class ?>" <?= $style ?>>
     <?php

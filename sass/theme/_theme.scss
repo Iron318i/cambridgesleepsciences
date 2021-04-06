@@ -189,12 +189,14 @@ select.form-control{
     }
     .btn{
 	margin-top: 1rem;
-	.icon{
-	    margin-left: rem(30px);
-	    font-size: .8em;
-	    position: relative;
-	    top: -2px;
-	}
+    }
+}
+.btn-arr{
+    .icon{
+	margin-left: rem(30px);
+	font-size: .8em;
+	position: relative;
+	top: -2px;
     }
 }
 .post-recent{
@@ -206,12 +208,6 @@ select.form-control{
     }
     .btn{
 	margin-top: 1rem;
-	.icon{
-	    margin-left: rem(30px);
-	    font-size: .8em;
-	    position: relative;
-	    top: -2px;
-	}
     }
 }
 .page-block{

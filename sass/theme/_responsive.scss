@@ -10,6 +10,11 @@
     .btn-lg{
 	padding: 1.25rem 2rem;
     }
+    .btn-arr{
+	.icon{
+	    margin-left: rem(70px);
+	}
+    }
     .post-card{
 	&:nth-child(odd) .row{
 	    flex-direction: row-reverse;
@@ -26,14 +31,6 @@
 	.entry-content{
 	    flex: 0 0 45%;
 	    max-width: 45%;
-	}
-	.icon{
-	    margin-left: rem(70px);
-	}
-    }
-    .post-recent{
-	.btn .icon{
-	    margin-left: rem(70px);
 	}
     }
     #contact-us{

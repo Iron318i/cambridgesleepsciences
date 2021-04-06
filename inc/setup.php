@@ -118,7 +118,7 @@ if (!function_exists('cambridgesleepsciences_all_excerpts_get_more_link')) {
      */
     function cambridgesleepsciences_all_excerpts_get_more_link($post_excerpt) {
 	if (!is_admin()) {
-	    $post_excerpt = $post_excerpt . '<div class="read-more"><a class="btn btn-lg btn-primary" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __(
+	    $post_excerpt = $post_excerpt . '<div class="read-more"><a class="btn btn-lg btn-primary btn-arr" href="' . esc_url(get_permalink(get_the_ID())) . '">' . __(
 			    '<span>Read More</span>' . get_the_svg('right-arrow'), 'cambridgesleepsciences'
 		    ) . '</a></div>';
 	}
