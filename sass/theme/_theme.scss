@@ -263,29 +263,18 @@ select.form-control{
     }
 }
 .home{
-    position: relative;
     .site-header{
-	position: absolute;
+	position: relative;
 	z-index: 999;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: none;
-	padding-top: 47px;
-    }
-    #main-menu{
-	background-color: $primary;
-	padding: rem(24px 32px);
-	border-radius: 3rem;
     }
 }
 #main-banner{
     background-color: #000211;
     background-image: url(../img/main-banner.jpg);
-    max-width: 2000px;
-    margin-left: auto;
-    margin-right: auto;
     position: relative;
+    .container{
+	max-width: 100%;
+    }
     &:before{
 	content: '';
 	position: absolute;
@@ -302,11 +291,10 @@ select.form-control{
 	z-index: 4;
     }
     .row{
-	height: 42.45vw;
+	height: 50vw;
 	align-content: center;
     }
     .fw-special-title{
-	margin-top: 4vw;
 	color: #fff;
 	font-size: 5.1vw;
 	line-height: 1;
@@ -322,7 +310,7 @@ select.form-control{
     .btn-link{
 	color: #0c4053;
 	text-transform: none;
-	@include font-size(rem(22px));
+	font-size: rem(18px);
 	font-weight: 700;
 	.icon{
 	    margin-right: .7rem;
@@ -342,13 +330,12 @@ select.form-control{
     color: #333333;
     @include font-size(rem(20px));
     line-height: 1.75;
-    margin-top: rem(-60px);
     position: relative;
     z-index: 2;
     .col-12{
 	background-color: $gray-100;
-	padding-top: rem(70px);
-	padding-bottom: rem(70px);
+	padding-top: rem(30px);
+	padding-bottom: rem(30px);
 	border-radius: 0 0 5.2vw 5.2vw;
     }
 }

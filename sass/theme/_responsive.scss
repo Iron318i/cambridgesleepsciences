@@ -131,6 +131,20 @@
 	    padding-top: 30%;
 	}
     }
+    #main-banner{
+	&:before{
+	    content: '';
+	    position: absolute;
+	    left: -11vw;
+	    top: -5vw;
+	    display: block;
+	    width: 50.5vw;
+	    height: 50.5vw;
+	    background-color: $primary;
+	    border-radius: 50%;
+	    z-index: 3;
+	}
+    }
 }
 @include media-breakpoint-up(xl) {
     .post-card{
@@ -155,6 +169,41 @@
     #main-banner{
 	.container{
 	    max-width: 1722px;
+	}
+    }
+    .home{
+	position: relative;
+	.site-header{
+	    position: absolute;
+	    z-index: 999;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    background: none;
+	    padding-top: 47px;
+	}
+	#main-menu{
+	    background-color: $primary;
+	    padding: rem(24px 32px);
+	    border-radius: 3rem;
+	}
+    }
+    #main-banner{
+	.row {
+	    height: 42.45vw;
+	}
+	.fw-special-title {
+	    margin-top: 4vw;
+	}
+	.btn-link{
+	    font-size: rem(22px);
+	}
+    }
+    #welcome{
+	margin-top: rem(-60px);
+	.col-12{
+	    padding-top: rem(70px);
+	    padding-bottom: rem(70px);
 	}
     }
 }
