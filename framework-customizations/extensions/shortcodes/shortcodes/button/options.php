@@ -36,7 +36,7 @@ $options = array(
 	'type' => 'select',
 	'choices' => array(
 	    'primary' => __('Blue', 'fw'),
-	    'danger' => __('Red', 'fw'),
+	    'dark' => __('Dark', 'fw'),
 	    'link' => __('Link', 'fw'),
 	)
     ),

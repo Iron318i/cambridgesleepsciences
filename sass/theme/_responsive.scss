@@ -152,6 +152,11 @@
 	    margin-top: 3.5rem;
 	}
     }
+    #main-banner{
+	.container{
+	    max-width: 1722px;
+	}
+    }
 }
 
 @include media-breakpoint-down(md) {

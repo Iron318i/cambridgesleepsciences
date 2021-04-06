@@ -280,9 +280,51 @@ select.form-control{
     }
 }
 #main-banner{
+    background-color: #000211;
     background-image: url(../img/main-banner.jpg);
-    height: 42.45vw;
-    .fw-heading{
-	margin-top: 5rem;
+    max-width: 2000px;
+    position: relative;
+    &:before{
+	content: '';
+	position: absolute;
+	left: -5.2vw;
+	top: -5vw;
+	display: block;
+	width: 50.5vw;
+	height: 50.5vw;
+	background-color: $primary;
+	border-radius: 50%;
+	z-index: 3;
+    }
+    .col-12{
+	z-index: 4;
+    }
+    .row{
+	height: 42.45vw;
+	align-content: center;
+    }
+    .fw-special-title{
+	color: #fff;
+	font-size: 5.1vw;
+	line-height: 1;
+	font-weight: 400;
+	max-width: 24.5vw;
+	strong{
+	    font-weight: 900;
+	}
+    }
+}
+#welcome{
+    color: #333333;
+    @include font-size(rem(20px));
+    line-height: 1.75;
+    margin-top: rem(-60px);
+    position: relative;
+    z-index: 2;
+    .col-12{
+	background-color: $gray-100;
+	padding-top: rem(70px);
+	padding-bottom: rem(70px);
+	border-radius: 0 0 5.2vw 5.2vw;
     }
 }
