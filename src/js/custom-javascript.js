@@ -44,6 +44,7 @@
 	margin: 30,
 	items: 2,
 	loop: true,
+	autoplay: true,
 	autoplayTimeout: 2000,
 	responsive: {
 	    375: {

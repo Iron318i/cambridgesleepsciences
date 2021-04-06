@@ -5,6 +5,11 @@
 	    font-weight: 400;
 	}
     }
+    .owl-carousel{
+	.owl-nav.disabled + .owl-dots {
+	    margin-top: 2rem;
+	}
+    }
 }
 @include media-breakpoint-up(md) {
     .btn-lg{
