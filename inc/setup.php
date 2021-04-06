@@ -131,3 +131,4 @@ add_image_size('page-header-large', 1920, 375, array('center', 'center'));
 add_image_size('page-header-md', 768, 300, array('center', 'center'));
 add_image_size('post-thumb', 693, 307, array('center', 'center'));
 add_image_size('post-full', 1048, 464, array('center', 'center'));
+add_image_size('logo', 150, 50, array('center', 'center'));

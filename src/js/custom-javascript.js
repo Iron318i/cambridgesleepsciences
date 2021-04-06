@@ -37,6 +37,38 @@
 	}
     });
 
+    $('.owl-carousel.logo').owlCarousel({
+	responsiveClass: true,
+	dots: true,
+	nav: false,
+	margin: 30,
+	items: 2,
+	loop: true,
+	autoplayTimeout: 2000,
+	responsive: {
+	    375: {
+		margin: 15,
+		items: 3
+	    },
+	    576: {
+		margin: 30,
+		items: 3
+	    },
+	    768: {
+		margin: 30,
+		items: 4
+	    },
+	    992: {
+		margin: 46,
+		items: 5
+	    },
+	    1280: {
+		margin: 74,
+		items: 5
+	    }
+	}
+    });
+
     /*
      $(window).on("load resize", function () {
      $('.card-content').samesizr({
