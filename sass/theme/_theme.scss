@@ -246,6 +246,9 @@ select.form-control{
     }
     .info-box{
 	display: flex;
+	a{
+	    font-size: 14px;
+	}
 	.icon{
 	    flex: 0 0 40px;
 	    max-width: 40px;
