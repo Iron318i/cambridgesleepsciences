@@ -88,6 +88,18 @@
 	    }
 	}
     }
+    #newsletter{
+	.col-right{
+	    border-left: 1px solid #fff;
+	}
+	.custom-control-label{
+	    font-size: 12px;
+	    padding-top: 2px;
+	}
+	.btn-lg {
+	    padding: 22px 1rem;
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
     .content-section{
@@ -242,6 +254,20 @@
 	    padding-bottom: rem(70px);
 	}
     }
+    #newsletter{
+	.col-left{
+	    flex: 0 0 31%;
+	    max-width: 31%;
+	}
+	.col-center{
+	    flex: 0 0 42%;
+	    max-width: 42%;
+	}
+	.col-right{
+	    flex: 0 0 27%;
+	    max-width: 27%;
+	}
+    }
 }
 @media(min-width: 1700px){
     #main-banner{
@@ -270,6 +296,13 @@
 	}
     }
 }
+@include media-breakpoint-down(lg) {
+    #newsletter{
+	.col-left{
+	    margin-bottom: 1rem;
+	}
+    }
+}
 @include media-breakpoint-down(md) {
     .content-section{
 	font-size: 16px;
@@ -277,6 +310,13 @@
     .post-card{
 	.post-img{
 	    margin-bottom: 1.5rem;
+	}
+    }
+}
+@include media-breakpoint-down(sm) {
+    #newsletter{
+	.col-center{
+	    margin-bottom: 1rem;
 	}
     }
 }

@@ -344,7 +344,6 @@ select.form-control{
     background-color: $blue;
 }
 .row-newsletter{
-    justify-content: flex-start;
     align-items: center;
     h3{
 	color: #fff;
@@ -363,10 +362,10 @@ select.form-control{
 	background-color: #fff;
 	border-color: #fff;
 	border-radius: 2px;
+	height: rem(38px);
     }
     .custom-control-label{
 	color: #fff;
-	font-size: 13px;
     }
     .custom-control-label::before{
 	border-color: #fff;
@@ -384,22 +383,6 @@ select.form-control{
     }
     .wpcf7-exclusive-checkbox{
 	margin-bottom: 0;
-    }
-    .btn-lg {
-	padding: 24px 1rem;
-    }
-    .col-left{
-	flex: 0 0 31%;
-	max-width: 31%;
-    }
-    .col-center{
-	flex: 0 0 45%;
-	max-width: 45%;
-    }
-    .col-right{
-	flex: 0 0 24%;
-	max-width: 24%;
-	border-left: 1px solid #fff;
     }
 }
 .home .site-footer{
