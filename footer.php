@@ -39,6 +39,9 @@ defined('ABSPATH') || exit;
 		</ul>
 		<h5>SleepHub:</h5>
 		<ul class="nav">
+		    <li><a href="<?php echo fw_get_db_settings_option('sh_fb') ?>" target="_blank"><?php the_svg('facebook') ?></a></li>
+		    <li><a href="<?php echo fw_get_db_settings_option('sh_insta') ?>" target="_blank"><?php the_svg('instagram') ?></a></li>
+		    <li><a href="<?php echo fw_get_db_settings_option('sh_tw') ?>" target="_blank"><?php the_svg('twitter') ?></a></li>
 		    <li><a href="<?php echo fw_get_db_settings_option('sh_yt') ?>" target="_blank"><?php the_svg('youtube') ?></a></li>
 		    <li><a href="<?php echo fw_get_db_settings_option('sh_in') ?>" target="_blank"><?php the_svg('linkedin') ?></a></li>
 		</ul>

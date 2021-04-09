@@ -23,13 +23,28 @@ $options = array(
 			'type' => 'text',
 			'value' => '#'
 		    ),
-		    'sh_yt' => array(
-			'label' => __('SleepHub YouTube', 'cambridgesleepsciences'),
+		    'sh_fb' => array(
+			'label' => __('SleepHub Facebook', 'cambridgesleepsciences'),
 			'type' => 'text',
-			'value' => '#'
+			'value' => 'https://www.facebook.com/MySleepHub'
 		    ),
 		    'sh_in' => array(
 			'label' => __('SleepHub LinkidIn', 'cambridgesleepsciences'),
+			'type' => 'text',
+			'value' => 'https://www.linkedin.com/company/cambridge-sleep-sciences-ltd'
+		    ),
+		    'sh_insta' => array(
+			'label' => __('SleepHub Instagram', 'cambridgesleepsciences'),
+			'type' => 'text',
+			'value' => 'https://www.instagram.com/mysleephub'
+		    ),
+		    'sh_tw' => array(
+			'label' => __('SleepHub Twitter', 'cambridgesleepsciences'),
+			'type' => 'text',
+			'value' => 'https://twitter.com/My_SleepHub'
+		    ),
+		    'sh_yt' => array(
+			'label' => __('SleepHub YouTube', 'cambridgesleepsciences'),
 			'type' => 'text',
 			'value' => '#'
 		    ),

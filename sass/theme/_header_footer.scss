@@ -153,6 +153,7 @@
 	    svg{
 		width: rem(32px);
 		height: rem(32px);
+		margin-bottom: 5px;
 	    };
 	}
     }
@@ -338,17 +339,17 @@
     }
     .site-footer{
 	.container{
-	    padding-right: 72px;
-	    padding-left: 72px;
-	    max-width: 1192px;
+	    padding-right: 52px;
+	    padding-left: 52px;
+	    max-width: 1152px;
 	}
 	.row{
-	    margin-left: -72px;
-	    margin-right: -72px;
+	    margin-left: -52px;
+	    margin-right: -52px;
 	}
 	.col-md-4{
-	    padding-right: 72px;
-	    padding-left: 72px;
+	    padding-right: 52px;
+	    padding-left: 52px;
 	}
     }
 }
