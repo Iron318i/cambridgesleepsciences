@@ -43,7 +43,9 @@ defined('ABSPATH') || exit;
 		    <li><a href="<?php echo fw_get_db_settings_option('sh_insta') ?>" target="_blank"><?php the_svg('instagram') ?></a></li>
 		    <li><a href="<?php echo fw_get_db_settings_option('sh_tw') ?>" target="_blank"><?php the_svg('twitter') ?></a></li>
 		    <li><a href="<?php echo fw_get_db_settings_option('sh_yt') ?>" target="_blank"><?php the_svg('youtube') ?></a></li>
-		    <li><a href="<?php echo fw_get_db_settings_option('sh_in') ?>" target="_blank"><?php the_svg('linkedin') ?></a></li>
+		    <?php if (fw_get_db_settings_option('sh_in') != "") { ?>
+    		    <li><a href="<?php echo fw_get_db_settings_option('sh_in') ?>" target="_blank"><?php the_svg('linkedin') ?></a></li>
+		    <?php } ?>
 		</ul>
 		<p class="uk"><?php the_svg('united-kingdom') ?> United Kingdom</p>
 	    </div>
