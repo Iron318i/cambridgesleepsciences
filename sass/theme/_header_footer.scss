@@ -27,16 +27,17 @@
 	    }
 	}
 	.dropdown-menu{
-	    background-color: $primary;
+	    background-color: #fff;
 	    padding: 0;
 	    > li + li{
 		border-top: 1px solid rgba(#fff, .3);
 	    }
 	    .dropdown-item{
-		font-size: 16px;
-		color: #fff;
+		font-size: 12px;
+		color: $blue-dark;
 		&:hover{
 		    background-color: $blue-dark;
+		    color: #fff;
 		}
 	    }
 	}

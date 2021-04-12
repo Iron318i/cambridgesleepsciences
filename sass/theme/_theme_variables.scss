@@ -103,10 +103,10 @@ $font-family-sans-serif: 'Lato', sans-serif;
 
 $font-weight-bolder: 700;
 
-$h1-font-size: rem(22px);
-$h2-font-size: rem(22px);
-$h3-font-size: rem(22px);
-$h4-font-size: rem(20px);
+$h1-font-size: rem(23px);
+$h2-font-size: rem(23px);
+$h3-font-size: rem(23px);
+$h4-font-size: rem(21px);
 $h5-font-size: rem(18px);
 $h6-font-size: rem(16px);
 
@@ -129,7 +129,9 @@ $navbar-nav-link-padding-x: rem(17px);
 
 
 $dropdown-link-color: $navbar-light-color;
-$dropdown-item-padding-x: .5rem;
+$dropdown-item-padding-x: rem(12px);
+$dropdown-item-padding-y: rem(8px);
+
 // Forms
 $form-grid-gutter-width: 10px;
 
