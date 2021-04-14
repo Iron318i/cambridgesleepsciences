@@ -280,7 +280,7 @@ select.form-control{
     background-image: url(../img/main-banner-sm.jpg);
     position: relative;
     .container{
-	max-width: 100%;
+	//max-width: 100%;
     }
     &:before{
 	content: '';
@@ -288,8 +288,8 @@ select.form-control{
 	left: -11vw;
 	top: -9vw;
 	display: block;
-	width: 63vw;
-	height: 63vw;
+	width: 70vw;
+	height: 70vw;
 	background-color: $primary;
 	border-radius: 50%;
 	z-index: 3;
@@ -306,7 +306,7 @@ select.form-control{
 	font-size: 7.5vw;
 	line-height: 1;
 	font-weight: 400;
-	max-width: 42vw;
+	max-width: 40vw;
 	strong{
 	    font-weight: 900;
 	}

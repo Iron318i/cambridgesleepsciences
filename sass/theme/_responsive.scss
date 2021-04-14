@@ -100,9 +100,27 @@
 	    margin-bottom: 0;
 	}
     }
+    #main-banner{
+	.btn-wrp,
+	.fw-heading{
+	    margin-left: 44px;
+	}
+	&:before{
+	    content: '';
+	    position: absolute;
+	    left: -3vw;
+	    top: -5vw;
+	    display: block;
+	    width: 50.5vw;
+	    height: 50.5vw;
+	    background-color: $primary;
+	    border-radius: 50%;
+	    z-index: 3;
+	}
+    }
 }
 @include media-breakpoint-up(lg) {
-    .content-section{
+    .content-section:not(#main-banner){
 	.container{
 	    padding-right: 28px;
 	    padding-left: 28px;
@@ -180,17 +198,9 @@
 	}
     }
     #main-banner{
-	&:before{
-	    content: '';
-	    position: absolute;
-	    left: -11vw;
-	    top: -5vw;
-	    display: block;
-	    width: 50.5vw;
-	    height: 50.5vw;
-	    background-color: $primary;
-	    border-radius: 50%;
-	    z-index: 3;
+	.btn-wrp,
+	.fw-heading{
+	    margin-left: 60px;
 	}
     }
 }
@@ -215,8 +225,20 @@
 	}
     }
     #main-banner{
+	padding-left: 15px;
+	padding-right: 15px;
 	.container{
-	    max-width: 1748px;
+	    max-width: 1722px;
+	}
+	.btn-wrp,
+	.fw-heading{
+	    margin-left: 77px;
+	}
+	&:before{
+	    left: -11vw;
+	    top: -5vw;
+	    width: 50.5vw;
+	    height: 50.5vw;
 	}
     }
     .home{
@@ -241,7 +263,7 @@
 	    height: 42.45vw;
 	}
 	.fw-special-title {
-	    margin-top: 4vw;
+	    margin-top: 5vw;
 	}
 	.btn-link{
 	    font-size: rem(22px);
