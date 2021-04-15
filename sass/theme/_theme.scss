@@ -56,7 +56,8 @@ select.form-control{
 	transform: translateY(-50%);
 	transition: top .3s ease-in , font-size .3s ease-in;
 	line-height: 1;
-	.required{
+	display: inline-block;
+	sup{
 	    color: $red;
 	}
     }
@@ -65,7 +66,7 @@ select.form-control{
 	font-size: 13px;
 	z-index: 3;
     }
-    .form-control{
+    .wpcf7-form-control-wrap{
 	position: relative;
 	z-index: 2;
 	background-color: transparent;
@@ -98,12 +99,12 @@ select.form-control{
     margin-left: auto;
     margin-right: auto;
     .container-fluid{
-	padding: 0;
+	padding: 0!important;
 	.row{
-	    margin: 0;
+	    margin: 0!important;
 	}
 	.col-lg-12{
-	    padding: 0;
+	    padding: 0!important;
 	}
     }
     .row{

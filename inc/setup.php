@@ -98,7 +98,7 @@ if (!function_exists('cambridgesleepsciences_custom_excerpt_more')) {
      */
     function cambridgesleepsciences_custom_excerpt_more($more) {
 	if (!is_admin()) {
-	    $more = '';
+	    $more = '...';
 	}
 	return $more;
     }

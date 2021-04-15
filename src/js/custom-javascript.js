@@ -27,11 +27,12 @@
     }
     checkFormControl();
 
-    $body.on('focus', '.form-control', function () {
+    $body.on('focus', '.wpcf7-form-control', function () {
+	console.log('!!!!!!!');
 	$(this).parents('.form-group').addClass('on-focus');
     });
 
-    $body.on('focusout', '.form-control', function () {
+    $body.on('focusout', '.wpcf7-form-control', function () {
 	if (!$(this).val().length) {
 	    $(this).parents('.form-group').removeClass('on-focus');
 	}
