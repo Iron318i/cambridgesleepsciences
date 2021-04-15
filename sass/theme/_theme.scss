@@ -66,10 +66,10 @@ select.form-control{
 	font-size: 13px;
 	z-index: 3;
     }
-    .wpcf7-form-control-wrap{
+    .wpcf7-form-control{
 	position: relative;
 	z-index: 2;
-	background-color: transparent;
+	background-color: transparent!important;
     }
 }
 .icon{
@@ -384,11 +384,13 @@ select.form-control{
 	    margin-left: 5px;
 	}
     }
-    .form-control{
-	background-color: #fff;
-	border-color: #fff;
-	border-radius: 2px;
-	height: rem(38px);
+    .form-group{
+	.wpcf7-form-control{
+	    background-color: #fff!important;
+	    border-color: #fff;
+	    border-radius: 2px;
+	    height: rem(38px);
+	}
     }
     .custom-control-label{
 	color: #fff;

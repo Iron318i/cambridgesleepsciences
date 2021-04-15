@@ -16,6 +16,7 @@ defined('ABSPATH') || exit;
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<?php echo fw_get_db_settings_option('gtag_js') ?>
 	<?php wp_head(); ?>
     </head>
     <body <?php body_class('header-hide'); ?> <?php cambridgesleepsciences_body_attributes(); ?>>
