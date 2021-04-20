@@ -68,7 +68,7 @@ defined('ABSPATH') || exit;
 		);
 		?>
 	    </div>
-	    <div class="col-12 col-md-auto">Copyright © <?php echo date('Y') ?> Cambridge Sleep Sciences. All rights reserved.</div>
+	    <div class="col-12 col-md-auto">Copyright © <?php echo date('Y') ?> Cambridge Sleep Sciences Ltd. All rights reserved.</div>
 	</div>
     </div>
 </footer>
