@@ -65,53 +65,50 @@ $options = array(
 		)
 	    ),
 	    'headers-box' => array(
-		'title' => __('Page headers', 'aesthetix'),
+		'title' => __('Page headers', 'cambridgesleepsciences'),
 		'type' => 'box',
 		'options' => array(
 		    'ph_blog' => array(
 			'type' => 'upload',
-			'label' => __('News header', 'aesthetix'),
+			'label' => __('News header', 'cambridgesleepsciences'),
 			'desc' => __('Choose Image 1920*375px', 'cambridgesleepsciences')
 		    ),
 		)
 	    ),
 	    'cta-box' => array(
-		'title' => __('CTA Block', 'aesthetix'),
+		'title' => __('CTA Block', 'cambridgesleepsciences'),
 		'type' => 'box',
 		'options' => array(
-		    'cta_img_1' => array(
-			'type' => 'upload',
-			'label' => __('Block image', 'cambridgesleepsciences'),
-			'desc' => __('Choose Image 502*310px', 'cambridgesleepsciences')
-		    ),
-		    'cta_heading_1' => array(
-			'type' => 'text',
-			'label' => __('Heading', 'cambridgesleepsciences'),
-		    ),
-		    'cta_desc_1' => array(
-			'type' => 'textarea',
-			'label' => __('Description', 'cambridgesleepsciences'),
-		    ),
-		    'cta_link_1' => array(
-			'type' => 'text',
-			'label' => __('Link', 'cambridgesleepsciences'),
-		    ),
-		    'cta_img_2' => array(
-			'type' => 'upload',
-			'label' => __('Block image', 'cambridgesleepsciences'),
-			'desc' => __('Choose Image 502*310px', 'cambridgesleepsciences')
-		    ),
-		    'cta_heading_2' => array(
-			'type' => 'text',
-			'label' => __('Heading', 'cambridgesleepsciences'),
-		    ),
-		    'cta_desc_2' => array(
-			'type' => 'textarea',
-			'label' => __('Description', 'cambridgesleepsciences'),
-		    ),
-		    'cta_link_2' => array(
-			'type' => 'text',
-			'label' => __('Link', 'cambridgesleepsciences'),
+		    'cta-blocks' => array(
+			'type' => 'addable-popup',
+			'label' => __('Block', 'cambridgesleepsciences'),
+			'size' => 'large',
+			'popup-options' => array(
+			    'cta_img' => array(
+				'type' => 'upload',
+				'label' => __('Block image', 'cambridgesleepsciences'),
+				'desc' => __('Choose Image 502*310px', 'cambridgesleepsciences')
+			    ),
+			    'cta_heading' => array(
+				'type' => 'text',
+				'label' => __('Heading', 'cambridgesleepsciences'),
+			    ),
+			    'cta_desc' => array(
+				'type' => 'textarea',
+				'label' => __('Description', 'cambridgesleepsciences'),
+			    ),
+			    'cta_link' => array(
+				'label' => __('Link', 'cambridgesleepsciences'),
+				'type' => 'multi-select',
+				'population' => 'posts',
+				'source' => 'page',
+				'limit' => 1
+			    ),
+			),
+			'limit' => 0, // limit the number of boxes that can be added
+			'add-button-text' => __('Add', 'cambridgesleepsciences'),
+			'sortable' => true,
+			'template' => '{{- cta_heading }}', // box title
 		    ),
 		)
 	    ),

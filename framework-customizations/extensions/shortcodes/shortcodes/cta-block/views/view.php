@@ -8,22 +8,27 @@ if (!defined('FW')) {
  */
 ?>
 <div class="row">
-    <div class="col-md-6">
-	<a class="page-block" href="<?php echo fw_get_db_settings_option('cta_link_1') ?>">
-	    <?php echo wp_get_attachment_image(fw_get_db_settings_option('cta_img_1')["attachment_id"], 'thumbnail', false, array("class" => 'img-fluid')); ?>
-	    <div class="p-2 p-md-3">
-		<h3><?php echo fw_get_db_settings_option('cta_heading_1') ?></h3>
-		<p><?php echo fw_get_db_settings_option('cta_desc_1') ?></p>
-	    </div>
-	</a>
-    </div>
-    <div class="col-md-6">
-	<a class="page-block" href="<?php echo fw_get_db_settings_option('cta_link_2') ?>">
-	    <?php echo wp_get_attachment_image(fw_get_db_settings_option('cta_img_2')["attachment_id"], 'thumbnail', false, array("class" => 'img-fluid')); ?>
-	    <div class="p-2 p-md-3">
-		<h3><?php echo fw_get_db_settings_option('cta_heading_2') ?></h3>
-		<p><?php echo fw_get_db_settings_option('cta_desc_2') ?></p>
-	    </div>
-	</a>
-    </div>
+    <?php
+    $arr = fw_get_db_settings_option('cta-blocks');
+    $counter = 1;
+    foreach ($arr as $value) {
+	$block_id = $value['cta_link'][0];
+	if ($counter < 3) {
+	    if (get_the_ID() != $block_id) {
+		?>
+	        <div class="col-md-6">
+	    	<a class="page-block" href="<?php the_permalink($block_id) ?>">
+			<?php echo wp_get_attachment_image($value['cta_img']["attachment_id"], 'thumbnail', false, array("class" => 'img-fluid')); ?>
+	    	    <div class="p-2 p-md-3">
+	    		<h3><?php echo $value['cta_heading'] ?></h3>
+	    		<p><?php echo $value['cta_desc'] ?></p>
+	    	    </div>
+	    	</a>
+	        </div>
+		<?php
+		$counter++;
+	    }
+	}
+    }
+    ?>
 </div>
