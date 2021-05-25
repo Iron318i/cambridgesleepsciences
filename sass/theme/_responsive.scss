@@ -12,6 +12,14 @@
     }
 }
 @include media-breakpoint-up(md) {
+    #main-banner{
+	&:after{
+	    width: vw(250px);
+	    height: vw(250px);
+	    right: vw(130px);
+	    bottom: vw(50px);
+	}
+    }
     .btn-lg{
 	padding: 1.25rem 2rem;
     }

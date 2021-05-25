@@ -74,5 +74,6 @@ defined('ABSPATH') || exit;
 </footer>
 <?php get_template_part('template-parts/svg-sprite') ?>
 <?php wp_footer(); ?>
+<?php echo fw_get_db_settings_option('footer_code') ?>
 </body>
 </html>

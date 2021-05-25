@@ -62,6 +62,10 @@ $options = array(
 			'label' => __('Global site tag (gtag.js) - Google Analytics'),
 			'type' => 'textarea',
 		    ),
+		    'footer_code' => array(
+			'label' => __('Code in footer'),
+			'type' => 'textarea',
+		    ),
 		)
 	    ),
 	    'headers-box' => array(

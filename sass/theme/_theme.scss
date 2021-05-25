@@ -295,6 +295,17 @@ select.form-control{
 	border-radius: 50%;
 	z-index: 3;
     }
+    &:after{
+	content: '';
+	display: block;
+	background: url(../img/start-up-finalist.png) 50%/ contain no-repeat;
+	width: vw-sm(100px);
+	height: vw-sm(100px);
+	position: absolute;
+	right: vw-sm(10px);
+	bottom: vw-sm(10px);
+	z-index: 4;
+    }
     .col-12{
 	z-index: 4;
     }

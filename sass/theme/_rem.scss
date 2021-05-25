@@ -70,3 +70,13 @@ $rem-px-only: false !default;
 	}
     }
 }
+
+@function vw($target) {
+    $vw-context: (1920*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}
+
+@function vw-sm($target) {
+    $vw-context: (414*.01) * 1px;
+    @return ($target/$vw-context) * 1vw;
+}
